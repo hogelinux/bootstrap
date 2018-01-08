@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> 	
+		<style type="text/css">
+			.img {
+				margin: 15px 10%;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default" id="nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><p class="glyphicon glyphicon-pencil"></p> Masa Blog</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#nav"><p class="glyphicon glyphicon-home"></p> Home<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#ethnic">Ethnic</a></li>
+							<li><a href="#weather">Weather</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Search</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+						<!-- Trigger the modal with a button -->
+						<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">Conatact me</button>
+						<!-- Modal -->
+						<div id="myModal" class="modal fade" role="dialog">
+							<div class="modal-dialog model-sm">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Contact me</h4>
+									</div>
+									<div class="modal-body">
+										<form>
+										<div class="form-group">
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+										</div>
+										<div class="form-group">
+										<label for="form-control">Text</label>
+										<textarea class="form-control" rows="3"></textarea>
+										</div>
+										<div class="form-group">
+										<label for="exampleInputFile">File input</label>
+										<input type="file" id="exampleInputFile">
+										<p class="help-block">Example block-level help text here.</p>
+										</div>
+										<div class="checkbox">
+										<label>
+										<input type="checkbox">Do you really want to send it?
+										</label>
+										</div>
+										<button type="submit" class="btn btn-default">Send</button>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		
+		<div class="container">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/5.jpg" alt="Los Angeles" height="30px">
+					</div>
+
+					<div class="item">
+						<img src="images/6.jpg" alt="Chicago" height="30px">
+					</div>
+
+					<div class="item">
+						<img src="images/7.jpg" alt="New York" height="3px">
+					</div>
+				</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Welcome my homepage!</h1>
+				<p>My name is Masa. I am Japanese. 
+				<br>This site is first time with bootstrap.</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more</a></p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="alert alert-info">
+					<p class="h3">What kind of site?</p>
+				</div>
+				<div class="panel-body">
+				<p class="h4">The culture of Cebu that I realized as a Japanese.
+				<br>Difference between Japan and Cebu.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<p class="h3 alert alert-success">Japan and Philippine</p>
+			<table class="table table-hover  table-striped">
+				<thead>
+					<tr>
+					    <th>Country</th>
+					    <th>Area</th>
+					    <th>Population</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					    <td>Japan</td>
+					    <td>377,972 km2</td>
+					    <td>126,672,000</td>
+					</tr>
+					<tr>
+					    <td>Philippine</td>
+					    <td>343,448 km2</td>
+					    <td>100,981,437</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="text-center">           
+				<img src="images/8.jpg" class="img" alt="japanflag Terre" height="100"> 
+				<img src="images/1.png" class="img" alt="Cinque Terre" height="100"> 
+			</div>
+		<br><hr></div>
+
+		<div class="container" id="weather">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<h3 class="panel-title">Weather</h3>
+				</div>
+				<div class="panel-body">
+					<p>Suddenly it begans to rain.
+					<br>It often happens that the weather gets worse although it was sunny until a while ago.
+					<br>Before entering the shop, it was nice weather but when I left the shop, I experienced it was raining and I could not return home.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="weather">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<h3 class="panel-title">Japanese in Cebu</h3>
+				</div>
+				<div class="panel-body">
+					<p>I think that Japanese people in Cebu live by extending the Japanese community.
+					<br>We tend to go out with Japanese and talk in Japanese.
+					<br>On the other hand, Koreans and Taiwanese people often talk to the local people in English.
+					<br>Even Japanese who have high English skills, when talking to local people they don't speak much and talk in short sentences.
+					<br>When Koreans and Taiwanese speak with locals, they can talk very well, laugh at each other, and enjoy the conversation.
+					<br>Japanese students talk often when talking to teachers who have become friends,
+					<br>but they are afraid to speak with the people who are meeting for the first time or the local people.
+					<br>
+					Because The Japanese are growing up with a Japanese cultur that is shy and withhold.
+					
+					</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="beer">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<h3 class="panel-title">Beer</h3>
+				</div>
+				<div class="panel-body">
+					<p>Beer is cheaper than the Japan.
+					<br>Beer is expensive because there is liquor tax in Japan.
+					<br>One red hose bucket only makes 299 pesos.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="ethnic">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<h3 class="panel-title">Ethnic</h3>
+				</div>
+				<div class="panel-body">
+
+					<p>The Philippines has a lot of ethnic.
+					<br>Many languages are spoken.</p>
+
+					<table class="table table-hover  table-striped">
+						<thead>
+							<tr>
+								<th>#</th>
+							    <th>%</th>
+							    <th>Japan</th>
+							    <th>%</th>
+							    <th>Philippine</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>			
+								<td>1</td>		
+							    <td>98.5%</td>
+							    <td>Japanese</td>
+							    <td>33.8%</td>
+							    <td>Visayan</td>
+							</tr>
+							<tr>	
+								<td>2</td>				 
+							    <td>0.5%</td>
+							    <td>Korean</td>
+							    <td>27.7%</td>
+							    <td>Tagalog</td>
+							</tr>
+							<tr>
+							    <td>3</td>
+							    <td>0.4%</td>
+							    <td>Chinese</td>
+							    <td>9.8%</td>
+							    <td>Ilocano</td>
+							</tr>
+							<tr>
+							    <td>4</td>
+							    <td>0.6%</td>
+							    <td>other</td>
+							    <td>6.8%</td>
+							    <td>Bicolano</td>
+							</tr>
+							<tr>
+							    <td>5</td>
+							    <td>-</td>
+							    <td>-</td>
+							    <td>5.1%</td>
+							    <td>Moro</td>
+							</tr>
+							<tr>
+							    <td>6</td>
+							    <td>-</td>
+							    <td>-</td>
+							    <td>3.1%</td>
+							    <td>Kapampangan</td>
+							</tr>
+							<tr>
+							    <td>7</td>
+							    <td>-</td>
+							    <td>-</td>
+							    <td>1.7%</td>
+							    <td>Igorot</td>
+							</tr>
+							<tr>
+							    <td>8</td>
+							    <td>-</td>
+							    <td>-</td>
+							    <td>1.4%</td>
+							    <td>Pangasinense</td>
+							</tr>
+							<tr>
+							    <td>9</td>
+							    <td>-</td>
+							    <td>-</td>
+							    <td>1.2%</td>
+							    <td>Chinese</td>
+							</tr>
+							<tr>
+							    <td>10</td>
+							    <td>-</td>
+							    <td>-</td>
+							    <td>1.1%</td>
+							    <td>Zamboangueño</td>
+							</tr>
+							<tr>
+							    <td>10</td>
+							    <td>-</td>
+							    <td>-</td>
+							    <td>8.3%</td>
+							    <td>otherso</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="container">
+			<ul class="pagination">
+				<li><a href="#">&laquo;</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+		</div>
+	
+		<div class="container">
+			<ol class="breadcrumb"> 
+				<li><a href="#nav">Home</a></li>
+				<li><a href="#">Library</a></li>
+				<li class="active">Data</li>
+			</ol>
+		</div>
+
+
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+	</body>
+
+
+</html>
